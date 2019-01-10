@@ -54,9 +54,10 @@ router.get('/usuarios/centros',(req,res,next)=>{
 
 // TRAER USUARIOS POR FECHA DE REGISTRO 
 
+
 // router.get('/',(req,res,next)=>{
-//     let startDate = "2018-11-29T00:01:00.175Z";
-//     let endDate = "2018-12-04T17:36:22.175Z";
+//     let startDate = "2018-12-04T00:01:00.175Z";
+//     let endDate = "2018-12-25T17:36:22.175Z";
 //   User.find({ created_at: { $gte: startDate, $lt: endDate }})
 //   .populate('centroConsumo')
 //   .then(usuarios=>{
@@ -66,5 +67,7 @@ router.get('/usuarios/centros',(req,res,next)=>{
 //       res.send('No funco papu...')
 //   })
 // })
+
+
 
 module.exports = router;

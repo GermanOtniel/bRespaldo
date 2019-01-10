@@ -142,5 +142,8 @@ app.use('/usuarios',usuarios);
 const confirm      =require('./routes/confirm');
 app.use('/confirm',confirm);
 
+const curso      =require('./routes/curso');
+app.use('/curso',curso);
+
 
 module.exports = app;

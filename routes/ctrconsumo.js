@@ -57,4 +57,18 @@ router.get('/users/:id',(req,res,next)=>{
     })
   })
 
+
+  // 5) CONSEGUIR TODOS LOS CENTROS DE CONSUMO QUE PERTENEZCAN A LA ZONA QUE MANDAMOS POR REQ.PARAMS.ID
+
+  router.get('/centros/:id',(req,res,next)=>{
+    CtrConsumo.find({zona: req.params.id})
+    .then(centros=>{
+        res.json(centros);
+    })
+    .catch(e=>{
+        res.send('NO CENTROS')
+    })
+  })
+
+
 module.exports = router;
